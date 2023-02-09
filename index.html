@@ -88,7 +88,7 @@
                               I have worked on active vision for robotic grasping in the <a href="http://www.pacman-project.eu"> PaCMan project </a>.
                             </p>
                             <p>
-                              Before being a postgraduate student, I received a Bachelors in Computer Science at the <a href="http://www2.cin.ufpe.br"> Center for Informatics, Federal University of Pernambuco</a>.
+                              Before being a postgraduate student, I received a Bachelors in Computer Science at the <a href="http://www2.cin.ufpe.br/en/"> Center for Informatics, Federal University of Pernambuco</a>.
                               I have also been part of the <a href="http://www.cin.ufpe.br/~voxarlabs/Home.html"> VoxarLabs </a>, where I worked on computer vision, augmented and virtual reality research and applications.
                             </p>
                             
@@ -101,7 +101,7 @@
                             </p>
                             </td>
                             <td width="33%">
-                            <img src="pic.jpg" style="width: 90%; height: 70%;">
+                            <img src="pic.jpg.old" style="width: 80%; height: 65%;">
                             </td>
                             </tr>
                             </table>
@@ -118,7 +118,44 @@
                             </table>
                             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                             
+                             <tr onmouseout="unc_mppi_push_stop()" onmouseover="unc_mppi_push_start()" >
 
+                              
+
+                              <td width="25%">
+            <!--                   <heading2><i>All Papers</i></heading2><br><br><br><br> -->
+
+          
+                              <div class="one">
+                              <div class="two" id = 'unc_mppi_push_image'><img src='./files/unc_mppi_push.gif' width="160" height="160"></div>
+                              <img src='./files/unc_mppi_push.jpg' width="160" height="160">>
+                              </div>
+                              <script type="text/javascript">
+                              function unc_mppi_push_start() {
+                              document.getElementById('unc_mppi_push_image').style.opacity = "1";
+                              }
+                              function unc_mppi_push_stop() {
+                              document.getElementById('unc_mppi_push_image').style.opacity = "0";
+                              }
+                              unc_mppi_push_stop()
+                              </script>
+                              
+                              </td>
+                              <td valign="top" width="75%">
+                                  <p><a href="https://arxiv.org/pdf/1710.04005.pdf">
+
+
+                                  <papertitle>Uncertainty averse pushing with model predictive path integral control</papertitle></a><br>
+                                  <strong>Ermano Arruda*</strong>, <a href="https://www.cs.bham.ac.uk/~mjm522">Michael J Mathew*</a>, <a href="https://www.cs.bham.ac.uk/~msk/">Marek Kopicki</a>, <a href="http://www.cs.bham.ac.uk/~mistrymn">Michael Mistry</a>, <a href="https://www.cs.bham.ac.uk/~azadm">Morteza Azad</a>, <a href="https://www.cs.bham.ac.uk/~jlw">Jeremy Wyatt</a><br/>(* equal contribution)<br/>
+                                      <em>International Conference on Humanoid Robots (Humanoids)</em>, 2017<br/>
+                                      <a href ="https://youtu.be/LjYruxwxkPM">video</a>
+                                      /
+                                      <a href="./files/bibtex/Arruda2017.bib">bibtex</a> <!--./files/bibtex/dummy.bib-->
+                                      <p></p>
+                                      <p>This work introduces a planner that makes use of an uncertain, learnt forward (dynamical) model to plan robust push manipulation. The forward model of the system is learned by poking the object in random directions and is then utilised by a model predictive path integral controller to push the box to a required goal location. By utilising path integral control, the proposed approach is able to avoid regions of high predictive uncertainty in the forward model. Thus, pushing tasks are completed in a robust fashion with respect to estimated uncertainty in the forward model and without the need of differentiable cost functions.</p>
+                                  </a></p>
+                              </td>
+                            </tr>
 
                             <tr onmouseout="actv4g_stop()" onmouseover="actv4g_start()" >
 
@@ -158,6 +195,8 @@
                                   </a></p>
                               </td>
                             </tr>
+
+
                             
                             
                       
@@ -186,6 +225,56 @@
                                     </p>
                                 </td>
                             </tr> -->
+                            </table>
+                            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                                <tr>
+                                    <td>
+                                        <heading>Workshops</heading>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table width="100%" align="center" border="0" cellpadding="20">
+                                <tr onmouseout="pggs_stop()" onmouseover="pggs_start()">
+
+
+                                    <td width="25%">
+
+                                      <div class="one">
+                                      <div class="two" id = 'pggs_image'><img src='./files/short_pggs_desc.gif' width="160" height="160"></div>
+                                      <img src='./files/pggs_rss2019.png' width="160" height="160">>
+                                      </div>
+                                      <script type="text/javascript">
+                                      function pggs_start() {
+                                      document.getElementById('pggs_image').style.opacity = "1";
+                                      }
+                                      function pggs_stop() {
+                                      document.getElementById('pggs_image').style.opacity = "0";
+                                      }
+                                      pggs_stop()
+                                      </script>
+
+                                    </td>
+                                    <td width="75%" valign="top">
+                                        <p>
+                                        <a href="https://arxiv.org/pdf/1906.11548">
+                                            <papertitle>Generative grasp synthesis from demonstration using parametric mixtures</papertitle>
+                                        </a>
+
+                                        <br>
+                                        <strong>Ermano Arruda</strong>, <a href="https://www.memnone.net"> Claudio Zito</a>, <a href="https://www.cs.bham.ac.uk/~sridharm/">Mohan Sridharan</a>, <a href="https://www.cs.bham.ac.uk/~msk/">Marek Kopicki</a>, <a href="https://www.cs.bham.ac.uk/~jlw/">Jeremy L. Wyatt</a>
+                                        <br><em> <a href="https://lcas.lincoln.ac.uk/wp/tig-ii/">Task-Informed Grasping (TIG-II): From Perception to Physical Interaction</a>, Robotics: Science and Systems (RSS)</em>, 2019.<br>
+                                        <a href ="https://youtu.be/9RqZaTAH4Fs">video</a>
+                                        /
+                                        <a href="./files/bibtex/ArrudaTIGRSS2019.bib">bibtex</a>
+                                        <p><br>
+                                          We present a parametric formulation for learning generative models for grasp synthesis from a demonstration. 
+                                          We cast new light on this family of approaches, proposing a parametric formulation for grasp synthesis that is computationally faster compared to related work and indicates better grasp success rate performance in simulated experiments. 
+                                          The proposed implementation is also able to incorporate arbitrary constraints for grasp ranking that may include task-specific constraints. Results are reported followed by a brief discussion on the merits of the proposed methods noted so far.
+                                        </p>
+                                        </p>
+                                    </td>
+                                </tr>
                             </table>
                             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                                 <tr>
@@ -227,7 +316,7 @@
                                         <a href ="https://youtu.be/-ZV9gk_Hw84">video</a>
                                         <p><br>
                                           In my final year project I have implemented a Graph SLAM (Simultaneous Localisation and Mapping) system for mobile robots.
-                                          The system was quantitavely evaluated on the <a href="https://vision.in.tum.de/data/datasets/rgbd-dataset"> TUM RGB-D SLAM Benchmark </a> dataset. 
+                                          The system was quantitatively evaluated on the <a href="https://vision.in.tum.de/data/datasets/rgbd-dataset"> TUM RGB-D SLAM Benchmark </a> dataset. 
                                           The final system was able to successfully map a whole flat using <a href="http://www.robots.ox.ac.uk/~mjc/Software.htm"> FAB-MAP </a> for loop-closure detection.
                                         </p>
                                         </p>
@@ -300,11 +389,18 @@
         <td width="75%" valign="center">
           <p>
 
+        <a href="https://www.cs.bham.ac.uk/internal/modules/2017/06-13520/">
+          <papertitle>06-13520: Intelligent Robotics</papertitle>
+        </a><br>
+        Teaching Assistant (TA)
+        <br><br>
+
         <a href="https://www.cs.bham.ac.uk/internal/modules/2016/06-28912/">
           <papertitle>06-28912: Graphics</papertitle>
         </a><br>
         Teaching Assistant (TA)
         <br><br>
+        
 
           <a href="https://www.cs.bham.ac.uk/internal/modules/2016/06-27821/">
           <papertitle>06-27821: Software Workshop 1</papertitle>
@@ -359,9 +455,10 @@
                             </tbody>
                            </table>
 
-                            
+                          
                                 </td>
                                 </tr>
                                 </table>
                                 </body>
 </html>
+
